@@ -9,7 +9,8 @@ class Triangle
 
   def kind
     if @x =< 0 || @y =< 0 || @z =< 0
-      raise
+      raise TriangleError
+    elsif @x + @y =< @z || @x + @z =< @y || @z + @y =< @x
     
     else
       if @x == @y == @z
