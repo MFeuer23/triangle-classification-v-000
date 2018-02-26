@@ -11,7 +11,7 @@ class Triangle
     if @x =< 0 || @y =< 0 || @z =< 0
       raise TriangleError
     elsif @x + @y =< @z || @x + @z =< @y || @z + @y =< @x
-    
+      raise TriangleError
     else
       if @x == @y == @z
         :equilateral
